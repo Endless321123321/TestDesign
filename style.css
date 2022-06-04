@@ -1,0 +1,293 @@
+/* 
+    Design aka CSS information
+    * @ CSS.technologies
+    * @ Version: 1.0.6
+    * @ Build date: May 25 2022
+    * @ Build type: Beta
+    * @ Registered design to: Endless
+
+    * Избавь нас от Юзера глупого, ибо продвинут он стал и имя ему БУХ.
+    * Выправи программы наши кривые, ибо клинит башни нам от конфигураторов и отладчиков.
+    * Открой нам знание, ибо истинно говоришь Ты нам, где тру и фолс.
+    * Откомментируй код наш многомегабайтный, ибо погрязли мы в MD-шниках своих.
+*/
+
+@font-face {
+  font-family: "Museo Sans Cyrl 500";
+  src: local("Museo Sans Cyrl"),
+       url("/fonts/MuseosansCyrl-500.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Museo Sans Cyrl 700";
+  src: local("Museo Sans Cyrl"),
+       url("/fonts/MuseosansCyrl-700.ttf") format("ttf");
+}
+
+ul {
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+ul li {
+  display: block;
+  padding: 0 25px;
+  color: #fff;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+
+  line-height: 24px;
+  text-transform: capitalize;
+  transition: .2s;
+  z-index: 10;
+
+}
+
+li a {
+  text-decoration: none;
+  color: #C1CCC7;
+  transition: .2s;
+  padding: 5px;
+  z-index: 10;
+}
+
+li img {
+  position: relative;
+  right: 4px;
+  top: 0px;
+  filter: opacity(50%)
+}
+
+ul:hover li a:hover {
+  position: relative;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  color: #fff;
+  background-color: #FAA618;
+}
+
+li a:hover img {
+  filter: opacity(100%)
+}
+
+ol li {
+  display: block;
+  margin-left: 2%;
+  padding: 0 5px;
+  color: rgb(145, 204, 252);
+  line-height: 35px;
+}
+ol:hover li a:hover {
+  border: solid 1px rgb(56, 56, 56);
+  color: #fff;
+  background-color: rgb(163, 163, 163);
+  background: size 1000px;
+  right: 50px;
+  transition: .2s;
+}
+ol:hover li:hover {
+  margin-left:3%;
+  transition: .2s;
+}
+ol li::before {
+  content: attr(data-icon);
+  /* Make slightly larger than the li font-size
+  but smaller than the li grid-gap */
+  font-size: 1.25em;
+}
+iframe {
+  position: relative;
+  left: 40%;
+  bottom: 75%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2%;
+}
+/* Visual */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  cursor: none;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  position: fixed;
+  background-color: #ffffffa9;
+  border-radius: 50%;
+  margin: -2px 0 0 -2px;
+  z-index: 9999;
+ 
+  pointer-events: none;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff98;
+  border-radius: 50%;
+  position: fixed;
+  margin: -20px 0 0 -20px;
+  z-index: 9999;
+  pointer-events: none;
+  
+}
+
+body {
+  margin: 0%;
+  background: rgb(17, 19, 19);
+}
+
+p img {
+  position: relative;
+  height: 20px;
+  right: 25px;
+  top: 24px; 
+}
+
+#maintext1 {
+  width: 200px;
+  height: 35px;
+  font-family: 'Museo Sans Cyrl 500';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(136, 136, 136, 0.25);
+}
+
+#Menu {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: -1px;
+  top: -1px;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+#menutext1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 83px;
+  height: 24px;
+  left: 55px;
+  top: 459px;
+
+  font-family: 'Museo Sans Cyrl 500';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 10px;
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+
+  color: #F5F4F9;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+#backgroundcircle {
+  position: absolute;
+  width: 672px;
+  height: 604px;
+  left: -86px;
+  top: -97px;
+  
+  background: #15D989;
+  border-radius: 100%;
+}
+#backgroundblur {
+  position: absolute;
+width: 100%;
+height: 100%;
+left: 0px;
+top: 0px;
+
+background: rgba(12, 26, 17, 0.7);
+backdrop-filter: blur(250px);
+}
+#bgline {
+  position: absolute;
+}
+#bgstar {
+  position: absolute;
+width: 150px;
+height: 150px;
+left: 85%;
+top: 15%;
+
+transform: rotate(15deg);
+}
+#bgstar1 {
+  position: absolute;
+width: 80px;
+height: 80px;
+left: 80%;
+top: 60%;
+
+transform: rotate(30deg);
+}
+#bgstar2 {
+  position: absolute;
+width: 120px;
+height: 120px;
+left: 102px;
+top: 163.06px;
+
+transform: rotate(-30deg);
+}
+#title {
+  position: absolute;
+width: 20%;
+height: 10%;
+left: 20%;
+top: 150%;
+
+font-family: 'IBM Plex Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 64px;
+line-height: 120%;
+letter-spacing: 0.02em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+#text {
+  position: absolute;
+width: 55%;
+height: 90%;
+left: 20%;
+top: 250%;
+
+font-family: 'Aleo';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+
+
+color: #C1CCC7;
+}
