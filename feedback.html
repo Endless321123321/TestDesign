@@ -118,7 +118,6 @@
                 let message = `<b>Сообщение с сайта!</b>\n`;
                 message += `<b>Отправитель: </b> ${ this.name.value }\n`;
                 message += `<b>Почта: </b> ${ this.email.value }\n`;
-                message += `<b>Текст: </b> ${ this.text.value }\n`;
 
                 axios.post(URI_API, {
                     chat_id: CHAT_ID,
