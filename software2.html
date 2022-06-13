@@ -1,0 +1,99 @@
+<html>
+<!-- 
+    HTML code information
+    * @ HTML.technologies
+    * @ Version: 1.1.2
+    * @ Build date: May 22 2022
+    * @ Build type: Alpha
+    * @ Registered to: Endless
+
+    * Избавь нас от Юзера глупого, ибо продвинут он стал.
+    * Выправи программы наши кривые, ибо клинит башни нам от конфигураторов и отладчиков.
+    * Открой нам знание, ибо истинно говоришь Ты нам, где тру и фолс.
+    * Откомментируй код наш многомегабайтный, ибо погрязли мы в MD-шниках своих.
+    
+    C Nuestro que estas en la Memoria,
+    Compilado sea tu código,
+    venga a nosotros tu software,
+    carguense tus punteros.
+    así en la RAM como en el Disco Duro,
+    Danos hoy nuestro Array de cada día,
+    Perdona nuestros Warnings,
+    así como nosotros también los eliminamos,
+    no nos dejes caer en Bucles,
+    y libranos del Windows, Enter.
+ -->
+<head>
+    <link rel="shortcut icon" href="icons\favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <title>Infovirus.ru / Компьютерные вредоносные программы: от истории до современности</title>
+    <link rel="stylesheet" href="css/stylepage2.css">
+    
+</head>
+
+<body>
+    <div id="backgroundcircle"></div>
+    <div id="backgroundblur"></div>
+    <div id="bgline"><img src="picture/lines.png"></div>
+    <div id="bgstar"><img src="picture/star.png"></div>
+    <div id="bgstar1"><img src="picture/star.png"></div>
+    <div id="bgstar2"><img src="picture/star.png"></div>
+                    <!-- Вверх страницы  -->
+    <div id="Menu">
+                <!-- Навигационное меню  -->
+                <div id="menuleft">
+                    <p id="maintext1">Infovirus.</p>
+                </div>
+        <div class="button">
+            <ul>
+                <li><a href="index.html">MAIN</a></li>
+                <li><a href="variation.html">VARIATION</a></li>
+                <li><a href="methods.html">METHODS</a></li>
+                <li><a href="software.html">MALICIOUS SOFTWARE</a></li>
+                
+            </ul>
+        </div>
+    </div>
+                <!-- Тело страницы (основное)  -->
+        <div id="title">Malicious software</div>
+        <div id="texttitle">Review and analysis of the ILoveYou virus [ And about the infostiler under the guise of Windows 11 update ]</div>
+        <div id="text">
+            <p align="justify">
+                Page 2<br />
+                <h3>Инфорстилер под видом обновления Windows 11
+                </h3>19 апреля стало известно, что киберпреступники распространяют поддельные обновления Windows 11, содержащие вредоносное ПО, которое похищает данные из браузера (учетные данные, cookie-файлы), системные файлы и криптовалютные кошельки. Вредоносная кампания на середину апреля 2022 года еще активна. Распространяется вредоносное ПО путем так называемого «отравления» результатов поиска для продвижения в поисковой выдаче сайтов, где якобы можно загрузить Windows 11. Эти сайты еще работают. В их дизайне используются официальный логотип Microsoft и фавиконы, а также присутствует кнопка «Загрузить сейчас».<br />
+                Если пользователь зашел на сайт через непосредственное подключение - загрузка доступна через Tor и VPN, он получит файл ISO с инфостилером внутри.<br />
+                Специалисты ИБ-компании CloudSEK назвали вредоносное ПО Inno Stealer, поскольку оно использует установщик Windows Inno Setup. Код вредоноса не похож на код известных вредоносных программ и пока не был загружен на Virus Total.<br />
+                Файл загрузчика на Delphi представляет собой исполняемый файл Windows 11 setup. После запуска он удаляет временный файл is-PN131.tmp и создает файл .TMP, куда записывает 3078 КБ данных.<br />
+                С помощью CreateProcess Windows API вредонос создает процессы, обеспечивает себе постоянство на системе и внедряет четыре файла. Два из них представляют собой скрипты Windows Command Script для отключения безопасности реестра, добавления исключений в «Защитник», деинсталляции решений безопасности и удаления теневых томов.<br />
+                Третий файл является утилитой выполнения команд, работающей с наивысшими привилегиями системы. Четвертый файл - VBA-скрипт, необходимый для запуска dfl.cmd.<br />
+                На втором этапе заражения в директорию C:\Users\\AppData\Roaming\Windows11InstallationAssistant загружается файл с расширением .SCR. Он представляет собой агент для распаковки инфостилера.<br />
+                С помощью команд PowerShell все похищенные данные копируются, шифруются и передаются на подконтрольный злоумышленникам C&C-сервер (windows-server031.com).<br />
+                <br />
+            </p>
+</div>
+
+<div id="bnext"><div id="tnext"><a href="software.html">BACK</a></div></div>
+<div id="progressbar"><div id="pbtext1">1</div></div>
+<div id="pbline"></div>
+<div id="pbbox"><div id="pbtext2">2</div></div>
+<div id="copyright"><a href="about.html">ABOUT ME</a></div>
+<div id="copyright1"><a href="contact.html">CONTACT US</a></div>
+<div id="copyright2"><a href="feedback.html">FEEDBACK</a></div>
+<script>
+    function getHeight() {
+var body = document.body,
+html = document.documentElement;
+return Math.max(body.scrollHeight, body.offsetHeight,
+html.clientHeight, html.scrollHeight, html.offsetHeight);
+}
+
+window.addEventListener('resize', function (event) {
+document.querySelector("#backgroundblur").style.height = getHeight() + 'px'
+}, true);
+
+window.onload = function () { document.querySelector("#backgroundblur").style.height = getHeight() + 'px' }
+</script>
+</body>
+
+</html>
