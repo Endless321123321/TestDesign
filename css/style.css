@@ -1,0 +1,347 @@
+/* 
+    Design aka CSS information
+    * @ CSS.technologies
+    * @ Version: 1.0.6
+    * @ Build date: May 25 2022
+    * @ Build type: Beta
+    * @ Registered design to: Endless
+
+    * Избавь нас от Юзера глупого, ибо продвинут он стал и имя ему БУХ.
+    * Выправи программы наши кривые, ибо клинит башни нам от конфигураторов и отладчиков.
+    * Открой нам знание, ибо истинно говоришь Ты нам, где тру и фолс.
+    * Откомментируй код наш многомегабайтный, ибо погрязли мы в MD-шниках своих.
+*/
+
+/* Меню */
+ul {
+  letter-spacing: 0.05em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+ul li {
+  display: block;
+  padding: 0 25px;
+  color: #fff;
+  font-family: 'IBM Plex Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+
+  line-height: 24px;
+  text-transform: capitalize;
+  transition: .2s;
+  z-index: 10;
+}
+
+li a {
+  text-decoration: none;
+  color: #C1CCC7;
+  transition: .2s;
+  padding: 5px;
+  z-index: 10;
+}
+
+li img {
+  position: relative;
+  right: 4px;
+  top: 0px;
+  filter: opacity(50%)
+}
+
+ul:hover li a:hover {
+  position: relative;
+  font-size: 17px;
+  line-height: 10px;
+  transition: .3s;
+  text-decoration: underline;
+
+}
+
+li a:hover img {
+  filter: opacity(100%)
+}
+
+/* Список */
+ol li {
+  display: block;
+  margin-left: 2%;
+  line-height: 35px;
+}
+
+ol:hover li:hover {
+  margin-left: 3%;
+  transition: .2s;
+}
+
+ol li::before {
+  content: attr(data-icon);
+  font-size: 1.25em;
+}
+
+/* Настройка видео-окна */
+iframe {
+  position: relative;
+  left: 35%;
+  bottom: 60%;
+  background-color: rgba(255, 255, 255, 0);
+  border-radius: 2%;
+}
+
+/* Настройка тела сайта емае */
+body {
+  margin: 0%;
+  overflow: auto;
+  background: rgb(17, 19, 19);
+  margin-bottom: 10px;
+}
+
+/* Заголовок сайта */
+#maintext1 {
+  width: 200px;
+  height: 35px;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0.2em;
+
+  color: #ffffff;
+
+  text-shadow: 0px 4px 4px rgba(136, 136, 136, 0.25);
+}
+
+/* Меню */
+#Menu {
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  left: -1px;
+  top: -1px;
+
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+
+/* Задний фон кружочек */
+#backgroundcircle {
+  position: absolute;
+  width: 672px;
+  height: 604px;
+  left: -86px;
+  top: -97px;
+
+  background: #15D989;
+  border-radius: 100%;
+}
+
+/* Блюр фона */
+#backgroundblur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  background: rgba(12, 26, 17, 0.7);
+  backdrop-filter: blur(250px);
+}
+
+/* Линия фона справа сверху */
+#bgline {
+  position: absolute;
+  right: 50%;
+  bottom: 50%;
+  transform: rotate(70deg);
+}
+
+/* Звездочка 1 (фон) */
+#bgstar {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 85%;
+  top: 15%;
+  transform: rotate(15deg);
+}
+
+/* Звездочка 2 (фон) */
+#bgstar1 {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 80%;
+  top: 60%;
+
+  transform: rotate(30deg);
+}
+
+/* Звездочка 3 (фон) */
+#bgstar2 {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 102px;
+  top: 163.06px;
+
+  transform: rotate(-30deg);
+}
+
+/* Заголовок */
+#title {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 20%;
+  top: 12%;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #afffdb;
+}
+
+/* Заголовок 2 (поменьше) */
+#texttitle {
+  position: absolute;
+  width: 55%;
+  height: 90%;
+  left: 20%;
+  top: 16%;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+
+
+  color: #e4e4e4;
+}
+
+/* Основной текст */
+#text {
+  position: absolute;
+  width: 55%;
+  height: 90%;
+  left: 20%;
+  top: 18%;
+
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: #C1CCC7;
+}
+
+/* Редактирование картинки в тексте */
+p img {
+  position: relative;
+  height: 40%;
+  left: 25%;
+  top: 20%;
+}
+
+/* Редактирование <a> */
+a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: rgb(211, 211, 211)
+}
+
+/* About */
+#copyright {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  left: 90%;
+  top: 95%;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: #b3ff9b;
+}
+
+/* Контакты */
+#copyright1 {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  left: 84%;
+  top: 95%;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: #b3ff9b;
+}
+
+/* Обратная связь */
+#copyright2 {
+  position: fixed;
+  width: 100px;
+  height: 30px;
+  left: 79%;
+  top: 95%;
+  font-family: 'Segoe UI';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  color: #b3ff9b;
+}
+
+/* Анимация */
+#copyright:hover {
+  font-size: 16px;
+  transition: .3s;
+  text-decoration: underline;
+}
+
+#copyright1:hover {
+  font-size: 16px;
+  transition: .3s;
+  text-decoration: underline;
+}
+
+#copyright2:hover {
+  font-size: 16px;
+  text-decoration: underline;
+  transition: .3s;
+}
+table {
+  border:1px outset #b3adad;
+  border-collapse:separate;
+}
+table th {
+  border:1px outset #b3adad;
+  background: #d1d1d1;
+  color: #000000;
+}
+table td {
+  border:1px outset #b3adad;
+  text-align:center;
+  background: #a8ffc2;
+  color: #000000;
+}
